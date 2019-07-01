@@ -5,7 +5,7 @@ This is my portfolio. I am showcasing my recent projects in web development.
     <h1> Acknowledgement </h1>
     <h2> Photo Credits: </h2>
 
-    <p> Three mages are from unsplash: https://images.unsplash.com </p>
+    #### Three mages are from unsplash: https://images.unsplash.com  ####
     <ul>
         <li>
             food:
