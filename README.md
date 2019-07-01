@@ -2,11 +2,11 @@
 This is my portfolio. I am showcasing my recent projects in web development.
 
 
-    <h1> Acknowledgement </h1>
-    <details>
+<h1> Acknowledgement </h1>
+<details>
     <h2> Photo Credits: </h2>
 
-    #### Three mages are from unsplash: https://images.unsplash.com  ####
+    <h3> Three mages are from unsplash: https://images.unsplash.com  </h3>
     <summary>
         <p>
             food:
@@ -24,13 +24,13 @@ This is my portfolio. I am showcasing my recent projects in web development.
         </p>
  </summary>
 
-<p> 
+ <p> 
     <h3> Other notable acknowledgements: </h3>
     <p>
         Followed lessons and code in Udacity, w3schools, Mozilla references and other google searches. <br>
         Also, used w3c validators.
     </p>
-</p>
+ </p>
 </details>
 
 
