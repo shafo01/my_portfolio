@@ -1,9 +1,9 @@
 # my_portfolio
 This is my portfolio. I am showcasing my recent projects in web development.
 
-<section>
-    # Acknowledgement #
-    # Photo Credits: #
+<details>
+    <h1> Acknowledgement </h1>
+    <h2> Photo Credits: </h2>
 
     #### Three mages are from unsplash: https://images.unsplash.com  ####
     <ul>
@@ -30,7 +30,7 @@ This is my portfolio. I am showcasing my recent projects in web development.
         Also, used w3c validators.
     </p>
 </p>
-</section
+</details>
 
 
 
