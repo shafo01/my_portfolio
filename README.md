@@ -2,8 +2,8 @@
 This is my portfolio. I am showcasing my recent projects in web development.
 
 <section>
-    <h1> Acknowledgement </h1>
-    <h2> Photo Credits: </h2>
+    # Acknowledgement #
+    # Photo Credits: #
 
     #### Three mages are from unsplash: https://images.unsplash.com  ####
     <ul>
