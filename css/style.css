@@ -1,0 +1,189 @@
+body {
+    font-family: "Roboto", sans-serif, Helvetica, Arial;
+    letter-spacing: 0.17em;
+}
+
+/* Header */
+.heading {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    /**** appearance  *******/
+    border-bottom: solid #7d97ad;
+    padding: 1.75em;
+}
+
+.title {
+    justify-self: end;
+
+    /**** appearance   ****/
+    color: #2d3c49;
+    text-align: right;
+}
+
+.title h1,
+h2 {
+    padding: 0.25em;
+    margin: 0;
+}
+
+.name {
+    font-weight: lighter;
+    font-size: 1.25em;
+}
+
+.job {
+    font-size: 0.75em;
+}
+
+.logo {
+    align-self: center;
+}
+
+.logo-img {
+    width: 3em;
+    height: 3em;
+}
+
+/* Content */
+
+main {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+
+}
+
+/** Welcome **/
+.welcome {
+    display: grid;
+    font-size: 1.25em;
+    justify-content: center;
+    align-items: center;
+}
+
+.poem {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.poet {
+    text-align: right;
+    margin: 1em;
+}
+
+.stanza::before {
+    content: "\201C";
+}
+
+.stanza::after {
+    content: "\201D";
+}
+
+/**landing image **/
+.landing {
+    display: grid;
+    justify-items: center;
+
+    /**** appearance  ****/
+    padding-bottom: 1.25em;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    opacity: 0.1;
+}
+
+.landing-img {
+    width: 100%;
+    height: auto;
+}
+
+.featured h2 {
+    padding: 0.5em;
+    margin: 0;
+}
+
+.featured-heading {
+    color: #7d97ad;
+    font-size: 2em;
+}
+
+.featured-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3%;
+    margin: 0;
+    padding: 0;
+}
+
+.featured-app {
+    list-style: none;
+}
+
+.featured-img {
+    width: 100%;
+    height: 12em;
+}
+
+.featured-app-name {
+    text-align: center;
+}
+
+.featured-app-link {
+    text-align: center;
+}
+
+/* Responsive */
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+    .featured-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .job {
+        font-size: 1em;
+    }
+
+    .welcome {
+        font-size: 2em;
+    }
+
+    .logo-img {
+        width: 4em;
+        height: 4em;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+    .featured-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .name {
+        font-size: 2.5em;
+    }
+
+    .job {
+        font-size: 1.25em;
+    }
+
+    .welcome {
+        font-size: 2.5em;
+    }
+
+    .logo-img {
+        width: 4.5em;
+        height: 4.5em;
+    }
+
+    .landing-img {
+        max-width: 100%;
+        width: auto;
+    }
+
+}
