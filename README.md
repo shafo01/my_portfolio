@@ -5,8 +5,8 @@ This is my portfolio. I am showcasing my recent projects in web development.
     <h1> Acknowledgement </h1>
     <h2> Photo Credits: </h2>
 
-    <h3> Three mages are from unsplash: https://images.unsplash.com </h3>
-    <ol>
+    <p> Three mages are from unsplash: https://images.unsplash.com </p>
+    <ul>
         <li>
             food:
             https://images.unsplash.com/photo-1502741126161-b048400d085d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
@@ -21,7 +21,7 @@ This is my portfolio. I am showcasing my recent projects in web development.
              https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 
              by JESHOOTS.COM
         </li>
-</ol>
+ </ul>
 
 <p> 
     <h3> Other notable acknowledgements: </h3>
