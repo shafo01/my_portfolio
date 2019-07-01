@@ -23,7 +23,7 @@ This is my portfolio. I am showcasing my recent projects in web development.
                 *https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80 
              by JESHOOTS.COM
         </p>
- </summary>
+   </summary>
 
  <p> 
     <h3> Other notable acknowledgements: </h3>
