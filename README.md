@@ -1,5 +1,5 @@
 ## Project
-This is my portfolio. I am showcasing my recent projects in web development.
+This is a work in progress of my portfolio. I am showcasing my recent projects in web development.
 
 
 ## Acknowledgement
