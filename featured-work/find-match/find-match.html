@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Kreating - About</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet'> -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <div class="logo">
+                <a href="index.html" aria-label="logo">
+                    <img src="../../img/logo.svg" class="logo-img" alt="logo">
+                </a>
+            </div>
+            <div class="title">
+                <h1 tabindex="0" aria-label="keep creating" class="name"> KeepKreating </h1>
+            </div>
+        </div>
+        <nav>
+            <ul role="menu" class="menu">
+                <li role="menuitem" class="menuitem"> <a href="../../index.html"> Home </a></li>
+                <li role="menuitem" class="menuitem active"><a href="../index.html"> Featured Work </a></li>
+                <li role="menuitem" class="menuitem"><a href="../../journal/persona.html"> Journal </a></li>
+                <li role="menuitem" class="menuitem"><a href="../../about.html"> About </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <a class="breadcrumb" href="../index.html"> Featured Work </a>
+        <section class="about">
+            <h1 class="about-heading" tabindex="0"> Find-and-Match </h1>
+            <p class="about-content" tabindex="0"> This is a find-and-match game. Playing it can help with concentration. It is built with mostly unicode characters in place of images - to improve loading time. I kept thinking about people who live in developing countries where the internet is slow. </p>
+            <!-- Game Play -->
+            <div class="find-match-container">
+                <header>
+                    <h1>Flip & Match</h1>
+                    <section class="score-board">
+                        <h3> Moves </h3>
+                        <h3> Stars </h3>
+                        <h3> Seconds </h3>
+                        <h3> Replay </h3>
+                        <span id="moves"> 0 </span>
+                        <span id="stars" class="stars">
+                            <span id="star1" class="star"> ★ </span>
+                            <span id="star2" class="star"> ★ </span>
+                            <span id="star3" class="star"> ★ </span>
+                        </span>
+                        <span id="seconds"> 0 </span>
+                        <button id="replay" class="replay"> ⟳ </button>
+                    </section>
+                </header>
+                <div class="table">
+                    <div id="board" class="board">
+                    </div>
+                    <div id="winningMat" class="winning-mat hide">
+                        <section class="winning-mat__banner">
+                            <h2 class="winning-mat__youwin"> You Win! </h2>
+                            <div id="winningMat__token" class="winning-mat__token"> 🌻 🌻 🌻</div>
+                            <a href="find-match.html" class="winning-mat__playback"> Play Again </a>
+                            <div id="winningMat__stars"> </div>
+                            <div id="winningMat__moves"> </div>
+                            <div id="winningMat__seconds"> </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <script src="js/app.js"></script>
+            <!-- End of Game Play -->
+            <h2 class="about-heading" tabindex="0"> Link to Repository </h2>
+            Link to GitHub Repoistory: <br>
+            <a href="https://github.com/shafo01/find-match" target='_blank'> https://github.com/shafo01/find-match </a>
+        </section>
+        <footer class="footer" tabindex="0">
+            Copyright © KeepKreating 2019
+        </footer>
+    </main>
+</body>
+
+</html>

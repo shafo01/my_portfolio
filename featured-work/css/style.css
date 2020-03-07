@@ -1,0 +1,36 @@
+article {
+}
+
+h1 {
+
+    font-size: 2em;
+    font-weight: 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #366185;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
+p {
+    margin: 5vh 0 5vh 0;
+}
+
+li {
+    padding: 0.25em;
+}
+
+.hero-image {
+    display: block;
+    margin: auto auto;
+}
+

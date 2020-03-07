@@ -1,0 +1,131 @@
+/* Content */
+
+/** Welcome **/
+.welcome {
+    display: grid;
+    font-size: 1.25em;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+
+}
+
+.poem {
+    /*display: inline-block;
+    margin-left: auto;
+    margin-right: auto;*/
+    grid-column: 1/1;
+    grid-row: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.poet {
+    text-align: right;
+    margin: 1em;
+    align-self: flex-end;
+}
+
+.job {
+    font-size: 0.75em;
+}
+
+.stanza::before {
+    content: "\201C";
+}
+
+.stanza::after {
+    content: "\201D";
+}
+
+/**landing image **/
+.landing {
+    display: grid;
+    justify-items: center;
+
+    /**** appearance  ****/
+    padding-bottom: 1.25em;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    opacity: 0.1;
+}
+
+.landing-img {
+    width: 100%;
+    height: auto;
+}
+
+.featured h2 {
+    padding: 0.5em;
+    margin: 0;
+}
+
+.featured-heading {
+    color: #366185;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.featured-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.featured-app {
+    list-style: none;
+    max-width: 300px;
+    margin: 0.5em;
+}
+
+.featured-app :hover {
+    transform: scale(1.05);
+}
+
+.featured-img {
+    width: 100%;
+}
+
+.featured-app-name {
+    text-align: center;
+}
+
+.featured-app-link {
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer span{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+
+/* Responsive */
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+    .welcome {
+        font-size: 2em;
+    }
+
+}
+
+@media only screen and (min-width: 769px) {
+
+
+    .welcome {
+        font-size: 2.5em;
+    }
+
+    .landing-img {
+        max-width: 100%;
+        width: auto;
+    }
+
+}

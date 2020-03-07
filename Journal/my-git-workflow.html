@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Git Workflow - Journal - Keep Kreating</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet'> -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/journal.css">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <div class="logo">
+                <a href="#" aria-label="logo">
+                    <img src="../img/logo.svg" class="logo-img" alt="logo">
+                </a>
+            </div>
+            <div class="title">
+                <h1 tabindex="0" aria-label="keep creating" class="name"> KeepKreating </h1>
+            </div>
+        </div>
+        <nav>
+            <ul role="menu" class="menu">
+                <li role="menuitem" class="menuitem"> <a href="../index.html"> Home </a></li>
+                <li role="menuitem" class="menuitem"><a href="../featured-work/index.html"> Featured Work </a></li>
+                <li role="menuitem" class="menuitem active"><a href="#"> Journal </a></li>
+                <li role="menuitem" class="menuitem"><a href="../about.html"> About </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            Written on <time datetime="2020-01-11">January 11, 2020</time> by Shafeeza
+            <h1> My Git Workflow </h1>
+            <p>
+                I work in a small team with awesome team-mates. In our team, there are three developers, myself included. To collaborate we use github. When starting to use git, I did face some challenges.
+            </p>
+            <p>
+                Firstly, I did not fully grasp the concepts and flow of git. Though I still used to make changes, create features and merge my changes with the master branch on the repo, I always had an uncertain and hesistant feeling.I am sort of a visual person and, when it comes to processes, I like to have a clear picture in my head. Hence, I decided to learn more about git.
+            </p>
+            <p>
+                I followed some of the lessons from two of Kevin Skoglund courses on <a href="https://www.linkedin.com/learning"> LinkedIn Learning</a>. I enjoyed watching those lessons and I definitely recommend them to anyone. He clearly described the process and gave clear instructions. The two courses are:
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/learning/git-essential-training-the-basics/the-explore-california-website?u=2218586"> Git Essential Training: The Basics </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/learning/git-branches-merges-and-remotes/delete-a-remote-branch?u=2218586"> Git Branches, Merges, and remotes </a>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                After watching these videos, I was able to more clearly visualize what was happening whilst I was pushing to the git remote. Here are commands that I often use to update my latest changes to the master on our github repo.
+            </p>
+            <h2> Git Clone </h2>
+            <p>
+                If you want to create a copy of the remote repository, instead of downloading the remote repository, you can simply clone.
+                <ul>
+                    <li>
+                        Navigate (cd) into a directory that will become the parent directory.
+                    </li>
+                    <li>
+                        Go to your github repository. Click on the 'Clone or download' button. There you will see the https web url. Copy it.
+                    </li>
+                    <li>
+                        Go back to the terminal and enter the following command:
+                        <section class="code"> git clone https_url_of_github_repository<sup>*</sup> </section>
+                        <sup>*</sup> This will be the actual https url from your git hub
+                    </li>
+                </ul>
+            </p>
+            <h2> Status of local repository </h2>
+            <ul>
+                <li>
+                    Checking the status of the local repository is a great way to check all the changes that we made into our local branches.
+                    <section class="code"> git status </section>
+                </li>
+            </ul>
+            <h2> Save changes on local repository </h2>
+            <ul>
+                <li>
+                    Add changes:
+                    <section class="code"> git add . </section>
+                    <div style="text-align: center"> or </div>
+                    <section class="code"> git add file_name<sup>*</sup> </section>
+                    <sup>*</sup> The name(including the extension) of the file you want to add. If you wish to add more than one file then use a space between the file names to separate them.
+                    <br> <br>
+                </li>
+                <li>
+                    Commit / save the changes:
+                    <section class="code"> git commit -m "headline <br>
+                        description (optional)" <br>
+                    </section>
+                </li>
+            </ul>
+            <h2> Compare changes with working directory and origin </h2>
+            <ul>
+                <li>
+                    <section class="code">
+                        git diff master origin/master
+                    </section>
+                </li>
+            </ul>
+            <h2> Create new branch in local working directory </h2>
+            <ul>
+                <li>
+                    <section class="code">
+                        git checkout -b name_of_branch
+                    </section>
+                </li>
+            </ul>
+            <h2> Delete a branch in local working directory </h2>
+            <ul>
+                <li>
+                    <section class="code">
+                        git branch -d name_of_branch
+                    </section>
+                </li>
+            </ul>
+            <h2> See all branches in the local working directory </h2>
+            <ul>
+                <li>
+                    <section class="code">
+                        git branch
+                    </section>
+                </li>
+            </ul>
+            <h2> Go to a specific branch </h2>
+            <ul>
+                <li>
+                    <section class="code">
+                        git checkout name_of_branch
+                    </section>
+                </li>
+            </ul>
+            <h2> Push changes to the remote repository on Github </h2>
+            <ul>
+                <li>
+                    <section class="code">
+                        git push -u origin name_of_branch
+                    </section>
+                </li>
+            </ul>
+            <h2> On Remote Repository, merge branch with master </h2>
+            <p>
+                For the remote repository on Github, when I have to merge a branch that is already on Github, I simply use the Github for merging the branch into master.
+            </p>
+            <h2> Delete a remote branch from terminal </h2>
+            <ul>
+                <li>
+                    <section class="code>">
+                        git push origin --delete name_of_branch
+                    </section>
+                </li>
+            </ul>
+            <h2>Update local branch with Remote Repository on Github </h2>
+            <p>
+                It is recommended to always update your local repository before you start work or attempt to make any push.
+                <br>
+                Use either a combination of Git fetch and merge or use git pull. Because I usually like to check the difference in between I usually like to use git fetch and merge.
+            </p>
+            <ul>
+                <li>
+                    Git fetch and merge
+                    <section class="code">
+                        git fetch <br>
+                        git merge
+                    </section>
+                </li>
+                <li>
+                    Git pull
+                    <section class="code">
+                        git pull
+                    </section>
+                </li>
+            </ul>
+        </article>
+        <footer class="footer" tabindex="0">
+            Copyright © KeepKreating 2019
+        </footer>
+    </main>
+</body>
+
+</html>

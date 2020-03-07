@@ -4,32 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shafeeza's Portfolio</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet'>
+    <title>Keep Kreating - Home</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet'> -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-    <header class="heading">
-        <div class="logo">
-            <img src="img/logo.svg" class="logo-img" alt="logo">
+    <header>
+        <div class="heading">
+            <div class="logo">
+                <a href="#" aria-label="logo">
+                    <img src="img/logo.svg" class="logo-img" alt="logo">
+                </a>
+            </div>
+            <div class="title">
+                <span tabindex="0" aria-label="keep creating" class="name"> KeepKreating </span>
+            </div>
         </div>
-        <div class="title">
-            <h1 class="name"> SHAFEEZA </h1>
-            <h2 class="job"> USER INTERFACE ENGINEER </h2>
-        </div>
+        <nav>
+            <ul role="menu" class="menu">
+                <li role="menuitem" class="menuitem active"> <a href="index.html"> Home </a></li>
+                <li role="menuitem" class="menuitem"><a href="featured-work/index.html"> Featured Work </a></li>
+                <li role="menuitem" class="menuitem"><a href="journal/persona.html"> Journal </a></li>
+                <li role="menuitem" class="menuitem"><a href="about.html"> About </a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="welcome">
             <div class="poem">
-                <q class="stanza">
+                <q tabindex="0" class="stanza">
                     Working patiently, <br>
                     putting pieces together <br>
-                    and keep creating...
+                    and keep kreating...
                 </q>
-                <h4 class="poet">
-                    Shafeeza
-                </h4>
+                <div tabindex="0" class="poet">
+                    Shafeeza <br> <span class="job"> UI Developer </span>
+                </div>
             </div>
             <div class="landing">
                 <picture>
@@ -41,43 +53,42 @@
             </div>
         </section>
         <section class="featured">
-            <h2 class="featured-heading"> Featured Work</h2>
+            <h2 tabindex="0" class="featured-heading"> Featured Work</h2>
             <ul class="featured-list">
                 <li class="featured-app">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="img/responsive/food-small.jpeg">
-                        <source media="(min-width: 769px)" srcset="img/food.jpeg">
-                        <img class="featured-img" src="img/food.jpeg" alt="restaurant app cover picture">
-                    </picture>
-                    <h2 class="featured-app-name"> Restaurant Reviewer </h2>
-                    <div class="featured-app-link">
-                        <a href="#"> Link </a>
-                    </div>
+                    <a href="featured-work/find-match/find-match.html">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/responsive/games3-small.png">
+                            <source media="(min-width: 769px)" srcset="img/games3.png">
+                            <img class="featured-img" src="img/games3.png" alt="memory game app cover picture">
+                        </picture>
+                        <p class="featured-app-name"> Flip-and-Match </p>
+                    </a>
                 </li>
                 <li class="featured-app">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="img/responsive/games-small.png">
-                        <source media="(min-width: 769px)" srcset="img/games.png">
-                        <img class="featured-img" src="img/games.png" alt="memory game app cover picture">
-                    </picture>
-                    <h2 class="featured-app-name"> Matching Game </h2>
-                    <div class="featured-app-link">
-                        <a href="#"> Link </a>
-                    </div>
+                    <a href="featured-work/games-as-analogs.html">
+                        <picture>
+                            <img class="featured-img" src="img/games-as-analogs.png" alt="games as analogs research work cover picture">
+                        </picture>
+                        <p class="featured-app-name"> Games as Analogs </p>
+                    </a>
                 </li>
-                <li class="featured-app">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="img/responsive/news-small.jpeg">
-                        <source media="(min-width: 769px)" srcset="img/news.jpeg">
-                        <img class="featured-img" src="img/news.jpeg" alt="newsfeed app cover picture">
-                    </picture>
-                    <h2 class="featured-app-name"> Newsfeed app </h2>
-                    <div class="featured-app-link">
-                        <a href="#"> Link </a>
-                    </div>
-                </li>
+                <!-- <li class="featured-app">
+                    <a href="#">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="img/responsive/news-small.jpeg">
+                            <source media="(min-width: 769px)" srcset="img/news.jpeg">
+                            <img class="featured-img" src="img/news.jpeg" alt="newsfeed app cover picture">
+                        </picture>
+                        <p class="featured-app-name"> Newsfeed app </p>
+                    </a>
+                </li> -->
             </ul>
+            More Coming Soon!!!
         </section>
+        <footer class="footer" tabindex="0">
+            <span> Copyright © KeepKreating 2019 </span>  <span> <a href="https://www.linkedin.com/in/shafeeza-hussain/"> LinkedIn </a> </span> 
+        </footer>
     </main>
 </body>
 
