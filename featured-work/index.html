@@ -4,35 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keep Kreating - Featured Works</title>
+    <title>Featured Works - Keep Kreating</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <meta name="author" content="Shafeeza Hussain">
+    <meta name="keywords" content="HTML, HTML5, CSS, JavaScript, Keep Kreating, User Experience, Portfolio, Casual games, accessibility">
 </head>
 
 <body>
     <header>
         <div class="heading">
             <div class="logo">
-                <a href="#" aria-label="logo">
-                    <img src="../img/logo.svg" class="logo-img" alt="logo">
+                <a href="../index.html" aria-label="logo">
+                    <span class="name">Keep</span><img src="../img/logo.svg" class="logo-img" alt="logo"><span class="name">Kreating</span>
                 </a>
             </div>
             <div class="title">
-                <h1 tabindex="0" aria-label="keep creating" class="name"> KeepKreating </h1>
+                <span  class="name-description"> Pieces from a UI Developer </span>
             </div>
         </div>
         <nav>
             <ul role="menu" class="menu">
                 <li role="menuitem" class="menuitem"> <a href="../index.html"> Home </a></li>
                 <li role="menuitem" class="menuitem active"><a href="#"> Featured Work </a></li>
-                <li role="menuitem" class="menuitem"><a href="../Journal/persona.html"> Journal </a></li>
+                <li role="menuitem" class="menuitem"><a href="../journal/index.html"> Journal </a></li>
                 <li role="menuitem" class="menuitem"><a href="../about.html"> About </a></li>
             </ul>
         </nav>
     </header>
     <main>
+    <a class="breadcrumb" href="../index.html"> Home </a> <span> Featured Work </span>
         <section class="featured">
-            <h1 tabindex="0" class="featured-heading"> Featured Work</h1>
+            <h1 class="featured-heading"> Featured Work</h1>
             <ul class="featured-list">
                 <li class="featured-app">
                     <a href="find-match/find-match.html">
@@ -41,15 +45,15 @@
                             <source media="(min-width: 769px)" srcset="../img/games3.png">
                             <img class="featured-img" src="../img/games3.png" alt="memory game app cover picture">
                         </picture>
-                        <p class="featured-app-name"> Flip-and-Match </p>
+                        <p class="featured-app-name"> Flip-and-Match - a casual game created with unicode characters </p>
                     </a>
                 </li>
                 <li class="featured-app">
                     <a href="games-as-analogs.html">
                         <picture>
-                            <img class="featured-img" src="../img/games-as-analogs.png" alt="games as analogs research work cover picture">
+                            <img style="border: solid 7px #366185;" class="featured-img" src="../img/games-as-analogs.png" alt="games as analogs research work cover picture">
                         </picture>
-                        <p class="featured-app-name"> Games as Analogs </p>
+                        <p class="featured-app-name"> Games as Analogs for Teaching Basic Programming Concepts </p>
                     </a>
                 </li>
                 <!-- <li class="featured-app">
@@ -63,8 +67,13 @@
                     </a>
                 </li> -->
             </ul>
-            More Coming Soon!!!
+            <p>
+            	More Coming Soon!!!
+            </p>
         </section>
+        <footer class="footer">
+            Copyright © KeepKreating 2019
+        </footer>
     </main>
 </body>
 

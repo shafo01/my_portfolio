@@ -1,46 +1,99 @@
 <!doctype html>
 <html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136101273-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-<head>
-    <meta charset="UTF-8">
+            gtag('config', 'UA-136101273-1');
+        </script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keep Kreating - About</title>
+
+    <title>Flip & Match - Featured Work - - Keep Kreating</title>
     <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet'> -->
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/about.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <meta name="author" content="Shafeeza Hussain">
+    <meta name="keywords" content="HTML, HTML5, CSS, JavaScript, Keep Kreating, User Experience, Portfolio, concentration, unicode, characters">
+    
+
+<!--[if IE]>
+  <style type="text/css">
+html:after {
+   display: block !important;
+   padding: 50px !important;
+   content: "You are using an unsupported browser. Support for older browsers is planned soon. However, in the meantime please open this page using Chrome, Safari, Firefox or Microsoft Edge." !important;
+   font-size: 24px !important;
+   font-family: sans-serif !important;
+   line-height: 1.8 !important;
+}
+
+main {
+   display: none !important;
+}
+  </style>
+<![endif]-->
+
+<style>
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+html:after {
+   display: block !important;
+   padding: 50px !important;
+   content: "You are using an unsupported browser. Support for older browsers is planned soon. However, in the meantime please open this page using Chrome, Safari, Firefox or Microsoft Edge." !important;
+   font-size: 24px !important;
+   font-family: sans-serif !important;
+   line-height: 1.8 !important;
+}
+
+main {
+   display: none !important;
+}
+}
+
+</style
+
+ 
 </head>
 
 <body>
     <header>
         <div class="heading">
             <div class="logo">
-                <a href="index.html" aria-label="logo">
-                    <img src="../../img/logo.svg" class="logo-img" alt="logo">
+                <a href="../../index.html" aria-label="logo">
+                    <span class="name">Keep</span><img src="../../img/logo.svg" class="logo-img" alt="logo"><span class="name">Kreating</span>
                 </a>
             </div>
             <div class="title">
-                <h1 tabindex="0" aria-label="keep creating" class="name"> KeepKreating </h1>
+                <span  class="name-description"> Pieces from a UI Developer </span>
             </div>
         </div>
         <nav>
             <ul role="menu" class="menu">
                 <li role="menuitem" class="menuitem"> <a href="../../index.html"> Home </a></li>
                 <li role="menuitem" class="menuitem active"><a href="../index.html"> Featured Work </a></li>
-                <li role="menuitem" class="menuitem"><a href="../../journal/persona.html"> Journal </a></li>
+                <li role="menuitem" class="menuitem"><a href="../../journal/index.html"> Journal </a></li>
                 <li role="menuitem" class="menuitem"><a href="../../about.html"> About </a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <a class="breadcrumb" href="../index.html"> Featured Work </a>
+    	<a class="breadcrumb" href="../../index.html"> Home </a> <a class="breadcrumb" href="../index.html"> Featured Work </a> <span> Flip-and-Match </span>
         <section class="about">
-            <h1 class="about-heading" tabindex="0"> Find-and-Match </h1>
+            <h1 class="about-heading" tabindex="0"> Flip-and-Match </h1>
             <p class="about-content" tabindex="0"> This is a find-and-match game. Playing it can help with concentration. It is built with mostly unicode characters in place of images - to improve loading time. I kept thinking about people who live in developing countries where the internet is slow. </p>
             <!-- Game Play -->
             <div class="find-match-container">
                 <header>
-                    <h1>Flip & Match</h1>
+                    <h2>Flip & Match</h2>
                     <section class="score-board">
                         <h3> Moves </h3>
                         <h3> Stars </h3>
@@ -48,12 +101,12 @@
                         <h3> Replay </h3>
                         <span id="moves"> 0 </span>
                         <span id="stars" class="stars">
-                            <span id="star1" class="star"> ★ </span>
-                            <span id="star2" class="star"> ★ </span>
-                            <span id="star3" class="star"> ★ </span>
+                            <span id="star1" class="star"> &#9733; </span>
+                            <span id="star2" class="star"> &#9733;</span>
+                            <span id="star3" class="star">&#9733; </span>
                         </span>
                         <span id="seconds"> 0 </span>
-                        <button id="replay" class="replay"> ⟳ </button>
+                        <button id="replay" class="replay"> &#10227; </button>
                     </section>
                 </header>
                 <div class="table">
@@ -62,7 +115,7 @@
                     <div id="winningMat" class="winning-mat hide">
                         <section class="winning-mat__banner">
                             <h2 class="winning-mat__youwin"> You Win! </h2>
-                            <div id="winningMat__token" class="winning-mat__token"> 🌻 🌻 🌻</div>
+                            <div id="winningMat__token" class="winning-mat__token"> </div>
                             <a href="find-match.html" class="winning-mat__playback"> Play Again </a>
                             <div id="winningMat__stars"> </div>
                             <div id="winningMat__moves"> </div>
@@ -73,12 +126,12 @@
             </div>
             <script src="js/app.js"></script>
             <!-- End of Game Play -->
-            <h2 class="about-heading" tabindex="0"> Link to Repository </h2>
+            <h2 class="about-heading"> Link to Repository </h2>
             Link to GitHub Repoistory: <br>
             <a href="https://github.com/shafo01/find-match" target='_blank'> https://github.com/shafo01/find-match </a>
         </section>
-        <footer class="footer" tabindex="0">
-            Copyright © KeepKreating 2019
+        <footer class="footer">
+            Copyright � KeepKreating 2019
         </footer>
     </main>
 </body>

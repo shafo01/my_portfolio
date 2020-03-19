@@ -3,12 +3,15 @@ html {
     box-sizing: border-box;
 }
 
+/*
 *,
 *::before,
 *::after {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
+
+*/
 
 .find-match-container {
     display: -webkit-box;

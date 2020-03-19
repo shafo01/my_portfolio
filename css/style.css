@@ -1,47 +1,50 @@
 body {
     /*font-family: "Roboto", Helvetica, sans-serif, Arial;*/
     font-family: Helvetica, Arial, sans-serif;
-    letter-spacing: 0.17em;
+    letter-spacing: 0.1em;
     color: #2d3c49;
     font-weight: 100;
+    background: #fefefe;
+    line-height: 1.75;
 }
 
-section,
-article {
+section, article{
     max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-p {
-    line-height: 1.5;
+p{
+    line-height: 1.75;
 }
 
 /* Header */
 .heading {
+    /*display: grid;
+    grid-template-columns: 1fr 3fr;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     /**** appearance  *******/
     border-bottom: solid #366185;
-    padding: 1.75em 0 1.75em 0;
-    width: 100%;
-
+    padding: 1em 0 1.75em 0;
 }
 
 .title {
+    /*justify-self: end;*/
+    /*align-self: flex-end;*/
+    
 
     /**** appearance   ****/
-    color: #2d3c49;
+    color: #366185;
     text-align: right;
-    align-self: flex-end;
     margin-top: 0.5em;
 }
 
 .title h1,
 h2 {
-    padding: 0.25em;
+   /* padding: 0.25em;*/
     margin: 0;
 }
 
@@ -49,37 +52,40 @@ h2 {
     font-weight: 100;
 }
 
-h1 {
-    font-size: 3.25em;
-}
-
-h2 {
+h1{
     font-size: 2.5em;
+    font-weight: 100;
 }
-
-h3 {
+h2{
+    font-size: 2.25em;
+    font-weight: 100;
+}
+h3{
     font-size: 2em;
+    font-weight: 100;
 }
-
-h4 {
+h4{
     font-size: 1.5em;
+    font-weight: 100;
 }
-
-h5 {
+h5{
     font-size: 1.25em;
+    font-weight: 100;
+}
+h6{
+    font-size: 1em;
+    font-weight: 100;
 }
 
-h6 {
-    font-size: 1em;
-}
 
 .name {
     font-weight: 100;
     font-size: 1.5em;
-
 }
 
-
+.name-description {
+        font-size: 1em;
+}
 
 .menu {
     font-size: 1.25em;
@@ -96,7 +102,7 @@ h6 {
     font-weight: 100;
     text-decoration: none;
     margin: 0.5em;
-    /*text-decoration-color: #366185;*/
+    /*text-decoration-color: #7d97ad;*/
 }
 
 .menuitem :hover {
@@ -104,6 +110,7 @@ h6 {
     text-decoration: underline;
     text-decoration-color: #366185;
     color: #366185;
+    
 
 
 }
@@ -117,22 +124,23 @@ h6 {
 
 .menu .active {
     background: #366185;
+    
 }
 
 .menu .active a {
     color: white;
     text-decoration: none;
+    outline-color: white;
 }
 
 .logo {
-    align-self: center;
+    /*align-self: flex-end;*/
 }
 
 .logo a {
     color: #366185;
     text-decoration: none;
 }
-
 
 .logo-img {
     width: 1em;
@@ -148,30 +156,30 @@ main {
 
 }
 
+/* Breadcrumbs */
+.breadcrumb {
+    color: #366185;
+}
+
+.breadcrumb::after {
+    font-family: "Times New Roman", Arial, Helvetica, Times, serif;
+    content: "\2192";
+}
+
+a.breadcrumb::after {
+    text-decoration: none;
+}
+
+a.breadcrumb:hover {
+    /*text-decoration: underline;*/
+}
+
 .footer {
     margin-top: 2em;
     padding-top: 2em;
     text-align: center;
     border-top: solid #366185;
 
-}
-
-/* Breadcrumbs */
-.breadcrumb {
-    color: #366185;
-}
-
-.breadcrumb::before {
-    font-family: "Times New Roman", Arial, Helvetica, Times, serif;
-    content: "\00AB";
-}
-
-a.breadcrumb {
-    text-decoration: none;
-}
-
-a.breadcrumb:hover {
-    text-decoration: underline;
 }
 
 /* Responsive */
@@ -182,14 +190,13 @@ a.breadcrumb:hover {
 
     .name {
         font-size: 2em;
-        display: inline-block;
     }
-
+    
     .name-description {
         font-size: 1.25em;
     }
 
-
+   
     .logo-img {
         width: 1.5em;
         height: 1.5em;
@@ -204,21 +211,18 @@ a.breadcrumb:hover {
 
     .name {
         font-size: 2.5em;
-        display: inline-block;
-
+    }
+    
+   .name-description {
+        font-size: 1.5em;
     }
 
-
-
+   
     .logo-img {
         width: 2em;
         height: 2em;
     }
-
-    .name-description {
-        font-size: 1.5em;
-    }
-
+    
 
 
 }

@@ -2,47 +2,62 @@
 <html lang="en">
 
 <head>
+    
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136101273-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-136101273-1');
+        </script>
+        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keep Kreating - About</title>
+    <title>About - Keep Kreating</title>
     <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet'> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="author" content="Shafeeza Hussain">
+    <meta name="keywords" content="HTML, HTML5, CSS, JavaScript, Keep Kreating, User Experience, Portfolio, User Interface Developer / Engineer ">
 </head>
 
 <body>
     <header>
-                <div class="heading">
+        <div class="heading">
             <div class="logo">
                 <a href="index.html" aria-label="logo">
-                    <img  src="img/logo.svg" class="logo-img" alt="logo">
+                    <span class="name">Keep</span><img src="img/logo.svg" class="logo-img" alt="logo"><span class="name">Kreating</span>
                 </a>
             </div>
             <div class="title">
-                <h1 tabindex="0" aria-label="keep creating" class="name"> KeepKreating </h1>
+                <span  class="name-description"> Pieces from a UI Developer </span>
             </div>
         </div>
         <nav>
             <ul role="menu" class="menu">
                 <li role="menuitem" class="menuitem"> <a href="index.html"> Home </a></li>
                 <li role="menuitem" class="menuitem"><a href="featured-work/index.html"> Featured Work </a></li>
-                <li role="menuitem" class="menuitem"><a href="journal/persona.html"> Journal </a></li>
+                <li role="menuitem" class="menuitem"><a href="journal/index.html"> Journal </a></li>
                 <li role="menuitem" class="menuitem active"><a href="#"> About </a></li>
             </ul>
         </nav>
     </header>
     <main>
+    	<a class="breadcrumb" href="index.html"> Home </a> <span> About </span>
         <section class="about">
-            <h1 class="about-heading" tabindex="0"> About </h1>
-            <p class="about-content" tabindex="0"> KeepKreating was created as a portfolio and journal by Shafeeza. She is an aspiring UI developer who has background in programming and UX. She has exposure to database design, back-end coding, front-end coding, REST APIs (JSON), User Experience, product development and e-learning. Her dream is to become an empathetic and creative UI engineer. She hopes to specialize in accessibility and performance optimization for web applications. She also has an admiration for colours and the effect they have on our senses. As she is learning she is documenting her journey.</p>
-
+            <h1 class="about-heading"> About </h1>
+            <p class="about-content"> KeepKreating was created as a portfolio and journal by Shafeeza. Shafeeza is an aspiring UI developer who has background in programming and UX. She has exposure to database design, back-end coding, front-end coding, REST APIs (JSON), User Experience, product development and e-learning. Her dream is to become an empathetic and creative UI engineer. She hopes to specialize in accessibility and performance optimization for web applications. Shafeeza also has an admiration for colours and the effect they have on our senses. As Shafeeza is learning she is documenting her journey. </p>
+            
             <p style="text-align:right">
                 Shafeeza <br>
-                <a href="#"> View Resume </a>
+                <a href="ShafeezaHussainResumeUIDeveloper.pdf"> View my resume </a>
             </p>
 
         </section>
-        <footer class="footer" tabindex="0">
+        <footer class="footer">
             Copyright © KeepKreating 2019
         </footer>
     </main>

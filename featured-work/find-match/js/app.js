@@ -7,7 +7,7 @@
  * @global
  */
 
-const flowers = ['🌹', '🌼', '🌻', '🌺', '🏵', '🌸', '🌻', '🌺', '🍀', '🌷', '🌷', '🍀', '🌸', '🏵', '🌼', '🌹'];
+const flowers = ['&#127801;', '&#127804;', '&#127803;', '&#127802;', '&#127989;', '&#127800;', '&#127803;', '&#127802;', '&#127808;', '&#127799;', '&#127799;', '&#127808;', '&#127800;', '&#127989;', '&#127804;', '&#127801;'];
 
 /**
  * Keep track on whether the app was started or not
@@ -568,7 +568,7 @@ const card = (function() {
         const front = document.createElement("div");
         front.classList.add('card__face');
         front.classList.add('card__face--front');
-        front.innerHTML = '💐';
+        front.innerHTML = '&#128144;';
         return front;
     }
 
@@ -600,6 +600,8 @@ const card = (function() {
         card.id = id;
         card.setAttribute('value', picture);
         card.setAttribute('matched', '0');
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
         card.classList.add('card');
 
         let front = createCardFront();
@@ -611,6 +613,13 @@ const card = (function() {
         card.addEventListener('click', function() {
             checkForPair(card);
 
+        });
+        
+        card.addEventListener('keypress', function(e) {
+           	if (e.key === 'Enter' || e.keyCode === 13) {
+      			// code for enter
+      			checkForPair(card);
+    		}            
         });
 
 

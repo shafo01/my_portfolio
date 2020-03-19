@@ -1,64 +1,25 @@
-article {}
-
-h1 {
-
-
-    font-weight: 100;
+article {
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #366185;
-    font-weight: 100;
-}
 
-h6 {
+h1, h2, h3, h4, h5, h6{
+	    color: #366185;
 
 }
 
-p {
-    margin: 5vh 0 5vh 0;
+
+p{
+	margin: 5vh 0 5vh 0;
 }
 
 .hero-image {
-    display: block;
-    margin: auto auto;
-    padding: 3vh 2vw 0 2vw;
+   display: block;
+   margin: auto auto;
+   /* padding: 3vh 2vw 0 2vw;*/
+   max-width: 100%;
+   
 }
 
-li {
-    padding: 0.25em;
-}
-
-.table-of-content {
-    margin: 1em;
-    font-size: 1.3em;
-}
-
-.table-of-content h1 {}
-
-.table-of-content a {
-    color: #7d97ad;
-    text-decoration: none;
-}
-
-.table-of-content ul {
-    line-height: 2;
-    list-style: none;
-}
-
-.table-of-content a:hover {
-    text-decoration: underline;
-}
-
-.code {
-    font-family: 'consolas,monaco,Andale Mono,monospace';
-    padding: 1em;
-    background: #366185;
-    color: #fefefe;
-    margin: 1em;
+li{
+	padding: 0.25em;
 }

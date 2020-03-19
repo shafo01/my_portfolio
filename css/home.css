@@ -2,24 +2,27 @@
 
 /** Welcome **/
 .welcome {
-    display: grid;
-    font-size: 1.25em;
-    justify-content: center;
-    align-items: center;
+    /*display: grid;*/
+    font-size: 1em;
+    /*justify-content: center;
+    align-items: center;*/
     font-weight: 100;
+    margin-bottom: 1.5em;
 
 }
 
 .poem {
     /*display: inline-block;
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
     grid-column: 1/1;
     grid-row: 1/1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;*/
+    text-align:center;
+    
 }
 
 .poet {
@@ -32,8 +35,19 @@
     font-size: 0.75em;
 }
 
+.job a {
+    color: #2d3c49;
+    text-decoration: none;
+}
+
+.job a:hover{
+	color: #366185;
+	text-decoration: underline;
+}
+
 .stanza::before {
     content: "\201C";
+    
 }
 
 .stanza::after {
@@ -82,6 +96,8 @@
 
 .featured-app :hover {
     transform: scale(1.05);
+    text-decoration: underline;
+    color: #366185;
 }
 
 .featured-img {
@@ -90,21 +106,17 @@
 
 .featured-app-name {
     text-align: center;
+    color: #366185;
+    
 }
 
 .featured-app-link {
     text-align: center;
+    
 }
 
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-footer span{
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+.featured-app a{
+    text-decoration: none;
 }
 
 
@@ -128,4 +140,27 @@ footer span{
         width: auto;
     }
 
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     /** Welcome **/
+    .welcome {
+    	display: -ms-grid;
+
+      }
+      
+      .poem {
+      	-ms-grid-column: 1;
+      	-ms-grid-row: 1;
+      }
+      
+      /**landing image **/
+    .landing {
+    	display: -ms-grid;
+
+    	/**** appearance  ****/
+    	-ms-grid-column: 1;
+    	-ms-grid-row: 1;
+	}
 }
